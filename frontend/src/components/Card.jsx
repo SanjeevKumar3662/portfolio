@@ -1,66 +1,68 @@
-import React from "react";
-import waveGif from "../assets/giphy.gif";
-
 export const Card = ({ project }) => {
   return (
-    <div className="flex justify-center">
+    <div className="w-full max-w-sm">
       <div
-        style={{ backgroundImage: `url('${waveGif}')` }}
-        className="relative bg-cover bg-center 
-                   bg-white/10 backdrop-blur-md
-                   border border-white/20
-                   p-6 flex flex-col
-                   w-full max-w-sm
-                   rounded-3xl shadow-2xl
-                   hover:scale-105 hover:shadow-3xl
-                   transition-all duration-300"
+        className="bg-white/5 backdrop-blur-lg border border-white/10 
+                      rounded-3xl shadow-xl overflow-hidden 
+                      transition-transform duration-300 hover:-translate-y-2"
       >
         {/* Image */}
-        <a href={project.live_link} target="_blank">
+        <a href={project?.live_link} target="_blank" rel="noopener noreferrer">
           <img
-            className="w-full h-48 object-cover rounded-2xl shadow-lg"
+            className="w-full h-52 object-cover"
             src={project?.thumbnail || "https://via.placeholder.com/400"}
             alt={project?.name || "Project"}
           />
         </a>
 
-        {/* Title */}
-        <h3 className="mt-5 text-xl font-semibold text-[#fcbf49] capitalize">
-          {project?.name || "Untitled Project"}
-        </h3>
+        <div className="p-6">
+          {/* Title */}
+          <h3 className="text-xl font-semibold text-[#fcbf49]">
+            {project?.name || "Untitled Project"}
+          </h3>
 
-        {/* Tech Stack */}
-        <p className="text-sm text-gray-300 mt-2">
-          Tech Stack: {project?.tech?.join(", ") || "Node.js"}
-        </p>
+          {/* Tech Stack */}
+          <div className="flex flex-wrap gap-2 mt-3">
+            {project?.tech?.map((tech) => (
+              <span
+                key={tech}
+                className="text-xs bg-white/10 px-2 py-1 rounded-md"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
 
-        {/* Buttons */}
-        <div className="flex flex-wrap gap-3 mt-6">
-          {/* <button className="px-4 py-2 bg-[#fcbf49] text-black rounded-xl font-medium hover:bg-yellow-400 transition">
-            Read More
-          </button> */}
+          <p className="text-md text-gray-200 mt-3 leading-relaxed">
+            {project?.description}
+          </p>
 
-          {project?.github_link && (
-            <a
-              href={project.github_link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 bg-[#fcbf49] text-black rounded-xl font-medium hover:bg-yellow-200 transition"
-            >
-              GitHub
-            </a>
-          )}
+          {/* Buttons */}
+          <div className="flex gap-3 mt-6 flex-wrap">
+            {project?.github_link && (
+              <a
+                href={project.github_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-[#fcbf49] text-black rounded-lg font-medium 
+                           hover:opacity-90 transition"
+              >
+                GitHub
+              </a>
+            )}
 
-          {project?.live_link && (
-            <a
-              href={project.live_link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-4 py-2 border border-white rounded-xl hover:bg-white hover:text-black transition"
-            >
-              Live Link
-            </a>
-          )}
+            {project?.live_link && (
+              <a
+                href={project.live_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 border border-white/30 rounded-lg 
+                           hover:bg-white hover:text-black transition"
+              >
+                Live Demo
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>
