@@ -12,7 +12,7 @@ export const projectData = [
   },
   {
     id: 2,
-    name: "Real-Time Chat Application",
+    name: "Real Time Chat Application",
     description:
       "A scalable real time chat app with private messaging, image uploads, and JWT authentication using Socket.io.",
     tech: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "Zustand"],

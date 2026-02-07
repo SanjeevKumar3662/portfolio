@@ -13,7 +13,7 @@ function App() {
           Hi, I'm <span className="text-[#fcbf49]">Sanjeev Kumar</span>
         </h1>
         <p className="mt-3 text-gray-300">
-          Full Stack Developer | MERN Stack | Building Cool Stuff
+          Full Stack Developer | Open To Work | MERN Stack | Building Cool Stuff
         </p>
       </section>
 
@@ -39,7 +39,7 @@ function App() {
           <p className="mt-4 text-gray-200 leading-relaxed">
             I have built full stack applications including a movie database app
             with authentication, watchlists, and dynamic routing, as well as a
-            real-time chat application with private messaging and media sharing.
+            real time chat application with private messaging and media sharing.
           </p>
 
           {/* Skills Tags */}
@@ -130,12 +130,14 @@ function App() {
         </div>
       </section>
       {/* Contact Section */}
+      {/* Contact Section */}
       <section className="mt-24 max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl font-semibold mb-6">Get In Touch</h2>
+        <h2 className="text-3xl font-semibold mb-6">Let’s Work Together</h2>
 
-        <p className="text-gray-200 mb-8">
-          I'm open to internship opportunities, freelance work, and exciting
-          collaborations. Let's build something great together.
+        <p className="text-gray-300 mb-8 leading-relaxed">
+          I’m currently open to internship and junior developer opportunities
+          where I can contribute to real world products, grow as a full stack
+          engineer, and work with experienced teams.
         </p>
 
         <div className="flex justify-center gap-6 flex-wrap">
@@ -147,21 +149,21 @@ function App() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/YOUR_LINK"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 border border-white rounded-xl hover:bg-white hover:text-black transition"
-          >
-            LinkedIn
-          </a>
-
-          <a
             href="https://github.com/SanjeevKumar3662"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 border border-white rounded-xl hover:bg-white hover:text-black transition"
           >
             GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/sanjeevkumar3662/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-3 border border-white rounded-xl hover:bg-white hover:text-black transition"
+          >
+            LinkedIn
           </a>
         </div>
       </section>
