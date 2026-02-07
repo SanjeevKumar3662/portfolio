@@ -14,7 +14,9 @@ export const NavBar = () => {
         {/* Logo */}
         <h2 className="flex items-center gap-2 text-xl font-bold text-white">
           <Code2 className="text-[#fcbf49]" size={24} />
-          sanjeekumar<span className="text-[#fcbf49]">.site</span>
+          <div>
+            sanjeekumar<span className="text-[#fcbf49]">.site</span>
+          </div>
         </h2>
 
         {/* Desktop Links */}

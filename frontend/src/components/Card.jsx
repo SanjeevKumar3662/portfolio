@@ -36,16 +36,16 @@ export const Card = ({ project }) => {
 
         {/* Buttons */}
         <div className="flex flex-wrap gap-3 mt-6">
-          <button className="px-4 py-2 bg-[#fcbf49] text-black rounded-xl font-medium hover:bg-yellow-400 transition">
+          {/* <button className="px-4 py-2 bg-[#fcbf49] text-black rounded-xl font-medium hover:bg-yellow-400 transition">
             Read More
-          </button>
+          </button> */}
 
           {project?.github_link && (
             <a
               href={project.github_link}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 border border-white rounded-xl hover:bg-white hover:text-black transition"
+              className="px-4 py-2 bg-[#fcbf49] text-black rounded-xl font-medium hover:bg-yellow-200 transition"
             >
               GitHub
             </a>
