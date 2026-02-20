@@ -1,5 +1,26 @@
 export const projectData = [
   {
+    id: 0,
+    name: "DevSocial - A Social Media Site",
+    description:
+      "A Full Stack Website for similar to twitter, where a user can make a text,video or image post.",
+    tech: [
+      "TypeScript",
+      "Tailwind",
+      "React",
+      "Express",
+      "Node.js",
+      "MongoDB",
+      "Axios",
+      "JWT",
+      "Zustand - Redux Alt",
+    ],
+    github_link: "https://github.com/SanjeevKumar3662/social_media_website",
+    live_link: "https://social-media-ruby-two-85.vercel.app/",
+    thumbnail:
+      "https://res.cloudinary.com/dwccikzgp/image/upload/v1771594759/devSocial_qtt45n.png",
+  },
+  {
     id: 1,
     name: "MyMDB – Movie Database App",
     description:
